@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>imagens dinâmicas html5</title>
+</head>
+
+<body>
+    <!--redimensionamento de imagens, para cada tamanho de tela aproximado.
+    parte do maior tamanho para o menor disponivel( de tvs,pcs a telefones)-->
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/m.png" type="image/png">
+        <img src="imagens/g.png" alt="imagem flexivel">
+    </picture>
+
+    <audio preload="metadata" autoplay controls loop >
+        <source src="caminho" type="audio/mpeg">
+        <source src="caminho" type="audio/ogg">
+        <source src="caminho" type="audio/wav">
+    </audio>
+</body>
+
+</html>

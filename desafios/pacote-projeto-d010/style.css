@@ -1,0 +1,210 @@
+@charset "uft-8";
+
+@font-face {
+    font-family: idroid;
+    src: url(fontes/idroid.otf) format('opentype');
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+body {
+    background-color: #84E1AD;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    border-radius: 0 0 20px 20px;
+    background-color: white;
+}
+
+.section_img {
+    padding: 0 20px;
+}
+
+.img_androids,
+.img_irina {
+    max-width: 100%;
+}
+
+
+header {
+    background-image: linear-gradient(to top, #1A5C38, #3CD883, #84E1AD);
+    padding: 20px 0 2px 0;
+
+}
+
+header h1 {
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+header h1,
+header p {
+    text-align: center;
+    color: white;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+}
+
+header a {
+    padding: 10px 10px;
+    text-decoration: none;
+    color: white;
+
+}
+
+
+.alinhamento_text_section {
+    padding: 5px 20px;
+}
+
+.section_texto_img h2,
+.section_texto_img h3 {
+    font-family: idroid;
+    color: #1A5C38;
+}
+
+.section_texto_img h3 {
+    background-image: linear-gradient(to right, #84e1ac88, white);
+}
+
+
+.centralizar_img_bugdroid {
+    display: flex;
+    justify-content: center;
+
+}
+
+
+.section_video {
+    padding: 20px 30px;
+    background-color: #1A5C38;
+
+}
+.video {
+    width: 100%;
+    height: 400px;
+}
+
+
+.section_aprender_mais {
+    margin-bottom: 20px;
+    padding: 20px;
+
+}
+
+.section_aprender_mais h2 {
+    font-size: 1.17em;
+    margin: 0;
+    border-radius: 20px 20px 0 0;
+    padding: 10px 10px;
+    background-color: #1f7446;
+    color: white;
+}
+
+.box_01 {
+    background-color: #84E1AD;
+    border-radius: 0 0 20px 20px;
+    padding: 10px;
+}
+
+
+.listas {
+    display: flex;
+    justify-content: left;
+}
+
+.listas ul {
+    width: 50vw;
+    list-style: none;
+    padding: 0;
+
+}
+
+
+footer p {
+    text-align: center;
+    padding: 5px 0;
+    margin: 0;
+    background-color: #1A5C38;
+}
+
+
+
+span {
+    color: #1A5C38;
+}
+
+span a {
+    color: #1A5C38;
+    text-decoration: none;
+}
+
+
+@media (min-width: 480px) and (max-width: 768px) {
+    nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+.section_video {
+    height: auto;
+}
+    .video {
+        width: 100%;
+        height: 300px;
+    }
+
+}
+
+
+
+@media (max-width: 360px) {
+    .listas {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+    }
+    
+    .listas ul {
+        margin: 0;
+        list-style: none;
+    }
+}
+
+/* Celulares pequenos */
+@media (max-width: 480px) {
+    nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .video {
+        width: 100%;
+        height: 200px;
+    }
+}
+
+/* Celulares médios */
+@media (max-width: 768px) {}
+
+/* Tablets */
+@media (max-width: 1024px) {}
+
+/* Notebooks */
+@media (max-width: 1440px) {}
+
+/* Monitores grandes */
+@media (max-width: 1920px) {}
+
+/* Ultrawide e 4K */
+@media (min-width: 1921px) {}

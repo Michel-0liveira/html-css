@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>inserindo videos no site com html5</title>
+    <style>
+        div {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h1>Inserindo um video em um site</h1>
+        <p>O msm video tem multiplas variações em formatoss diferentes,<br>
+            obtendo uma melhor compatibilidade com o navegador utulizado.
+        </p>
+        <video width="300px" height="500px" controls poster="imagens/pexels-mikhail-nilov-6942667.jpg">
+            <source src="midia/video-ogg.ogv" type="video/ogg">
+            <source src="midia/video-web-mp4.mp4" type="video/mp4">
+            <source src="midia/Video-webm.webm" type="video/webm">
+            <source src="midia/video-original.mp4" type="video/mp4">
+        </video>
+    </div>
+</body>
+
+</html>
