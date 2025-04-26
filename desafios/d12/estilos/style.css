@@ -4,3 +4,70 @@
     margin: 0;
     padding: 0;
 }
+
+html,
+body {
+    min-height: 100vh;
+    background-color: bisque;
+}
+
+header {
+    background-color: black;
+    text-align: center;
+}
+
+header>h1 {
+    color: white;
+    padding-top: 50px;
+    font-variant: small-caps;
+
+}
+
+header>p {
+    color: white;
+    padding-bottom: 50px;
+}
+
+header a,
+footer a {
+    color: white;
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+header a:hover,
+footer a:hover {
+    text-decoration: underline;
+}
+
+
+section {
+    padding: 10vh 0;
+    line-height: 2em;
+    padding-left: 30px;
+}
+
+section.normal {
+    background-color: white;
+}
+
+section.imagem {
+    background-color: black;
+
+}
+
+section.imagem p {
+    color: white;
+}
+
+
+
+footer {
+    text-align: center;
+    background-color: black;
+}
+
+footer>p {
+    padding: 10px;
+    color: white;
+}
