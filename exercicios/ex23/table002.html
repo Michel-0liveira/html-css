@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        caption {
+            padding: 10px;
+            font-size: 1.3em;
+            background-color: rgba(137, 43, 226, 0.514);
+            border-radius: 15px 15px 0 0;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 500px;
+            
+        }
+
+        thead,
+        tfoot {
+            background-color: rgba(12, 12, 12, 0.562);
+        }
+
+        tbody tr:nth-child(odd) {
+            background-color: rgba(0, 255, 255, 0.295);
+        }
+
+        th,
+        td {
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        .numero {
+            text-align: end;
+        }
+
+        .classificacao {
+            text-align: center;
+        }
+
+        div {
+            width: 500px;
+            background-color: rgba(137, 43, 226, 0.514);
+            padding: 10px 0;
+            border-radius: 0 0 15px 15px;
+            height: 16px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Tables maiores</h1>
+
+    <table>
+        <caption>Unidades federativas do Brasil por população</caption>
+        <thead>
+            <tr>
+                <th scope="col">N°</th>
+                <th scope="col">Estado</th>
+                <th scope="col">População</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="classificacao">01</td>
+                <td>São Paulo</td>
+                <td class="numero">45 973 194</td>
+            </tr>
+            <tr>
+                <td class="classificacao">02</td>
+                <td>Minas Gerais</td>
+                <td class="numero">21 322 691</td>
+            </tr>
+            <tr>
+                <td class="classificacao">03</td>
+                <td> Rio de Janeiro</td>
+                <td class="numero">17 219 679</td>
+            </tr>
+            <tr>
+                <td class="classificacao">04</td>
+                <td>Bahia</td>
+                <td class="numero">14 850 513</td>
+            </tr>
+            <tr>
+                <td class="classificacao">05</td>
+                <td>Paraná</td>
+                <td class="numero">11 824 665</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th></th>
+                <th scope="row">Total de Habitantes</th>
+                <td class="numero">0000000</td>
+            </tr>
+        </tfoot>
+    </table>
+    <div></div>
+</body>
+
+</html>
