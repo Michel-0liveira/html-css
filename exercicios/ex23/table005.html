@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        caption {
+            font-size: 1.5em;
+            padding-bottom: 10px;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 500px;
+
+        }
+
+        th,
+        td {
+            border: 1px solid black;
+            padding: 10px;
+        }
+        col.cnome {
+            background-color: aquamarine;
+        }
+        col.col_idade {
+            background-color: blue;
+        }
+
+        col.col_sexo {
+            background-color: brown;
+        }
+    </style>
+</head>
+
+<body>
+    
+    <h1>
+        Agrupando colunas com colgroup
+    </h1>
+
+    
+
+    <table>
+        <colgroup>
+        <col class="cnome">
+        <col class="col_idade">
+        <col class="col_sexo" span="2">
+        <col class="col_profissao">
+    </colgroup>
+
+        <caption>Titúlo da tabela</caption>
+        <tr>
+            <th scope="col">Nome</th>
+            <th scope="col">Idade</th>
+            <th scope="col">Sexo</th>
+            <th scope="col">Profissão</th>
+        </tr>
+        <tr>
+            <td>Michel</td>
+            <td>23</td>
+            <td>M</td>
+            <td>Programador</td>
+        </tr>
+        <tr>
+            <td>Yasmin</td>
+            <td>22</td>
+            <td>F</td>
+            <td>Veterinária</td>
+        </tr>
+        <tr>
+            <td>Vinicius</td>
+            <td>22</td>
+            <td>M</td>
+            <td>Marinheiro</td>
+        </tr>
+
+    </table>
+</body>
+
+</html>
