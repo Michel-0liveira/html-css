@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios numericos</title>
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Elementos numéricos nos formulários</h1>
+
+    <form action="cadrasto.php" method="get">
+        
+        <p>
+            <h3>Numeros - number</h3>
+            <label for="inumero">Nota</label>
+            <input type="number" name="numero" id="inumero" min="0" max="10" step="0.1" placeholder="0 a 10" required>
+        </p>
+
+        <p>
+            <h3>Mês e Ano - month</h3>
+            <label for="imes">Ano letivo</label>
+            <input type="month" name="mes" id="imes" value="2025-06">
+        </p>
+
+        <p>
+            <h3>dia/mes/ano - date</h3>
+            <label for="idia">data da avaliação</label>
+            <input type="date" name="dia" id="idia" value="2002-01-07">
+        </p>
+
+        <p>
+            <h3>horaio - time </h3>
+            <label for="ihora">Hora da avaliação</label>
+            <input type="time" name="hora" id="ihora" value="18:00">
+        </p>
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+
+</body>
+
+</html>
