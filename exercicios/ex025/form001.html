@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formularios</title>
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Criando meu primeiro formulário</h1>
+
+    <form action="cadrasto.php">
+        <p>
+            <label for="inome">Nome:</label>
+            <input type="text" name="nome" id="inome">
+        </p>
+        <p>
+            <label for="isobrenome">Sobrenome:</label>
+            <input type="text" name="sobrenome" id="isobrenome">
+        </p>
+
+        <p>
+        Selecione o seu Genero <br>
+        <label for="igenêro-m">masculino:</label>
+        <input type="checkbox" name="masculinos" id="igenêro-m">
+        <br>
+        <label for="igenêro-f">feminino:</label>
+        <input type="checkbox" name="feminino" id="igenêro-f">
+        </p>
+        <p>
+            <input type="button" value="enviar">
+        </p>
+    </form>
+</body>
+
+</html>
