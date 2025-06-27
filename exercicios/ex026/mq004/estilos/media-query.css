@@ -1,2 +1,98 @@
 @charset "UTF-8";
 
+/* tablet */
+@media screen and (min-width: 768px) and (max-width:992px) {
+    body {
+        background-image: url(../imagens/back-tablet.jpg);
+    }
+
+    img#phone {
+        display: none;
+    }
+    img#tablet {
+        display: block;
+    }
+    img#print {
+        display: none;
+    }
+    img#pc {
+        display: none;
+    }
+    img#tv {
+        display: none;
+    }
+}
+
+/* desktop */
+@media screen and (min-width: 993px) and (max-width:1200px) {
+    body {
+        background-image: url(../imagens/back-pc.jpg);
+    }
+
+    img#phone {
+        display: none;
+    }
+    img#tablet {
+        display: none;
+    }
+    img#print {
+        display: none;
+    }
+    img#pc {
+        display: block;
+    }
+    img#tv {
+        display: none;
+    }
+}
+
+/* televisões */
+@media screen and (min-width:1200px) {
+    body {
+        background-image: url(../imagens/back-tv.jpg);
+    }
+
+    main {
+    width: 700px;
+    background-color: rgba(255, 255, 255, 0.464);
+    border-radius:15px;
+    margin: auto;
+    margin-top: 10px;
+    padding: 20px;
+}
+
+    img#phone {
+        display: none;
+    }
+    img#tablet {
+        display: none;
+    }
+    img#print {
+        display: none;
+    }
+    img#pc {
+        display: none;
+    }
+    img#tv {
+        display: block;
+    }
+}
+
+/* impressora */
+
+@media print {
+    h1 {
+        font-family: 'Courier New', Courier, monospace;
+        text-shadow: none;
+        color: black;
+    }
+
+    main {
+        border: 1px solid black;
+        width: 90vw;
+    }
+    main::after {
+        content: "Está impressão foi criado pelo Curso em video";
+        text-decoration: underline;
+    }
+}
