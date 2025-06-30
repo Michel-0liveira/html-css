@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Responsivo</title>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link rel="stylesheet" href="estilos/style.css">
+</head>
+<body>
+    <header>
+        <h1>Meu site</h1>
+        <span id="burguer" class="material-symbols-outlined" onclick="clickMenu()">menu</span>
+        <menu id="itens">
+            <ul>
+                <li><a href="#">opção 01</a></li>
+                <li><a href="#">opção 02</a></li>
+                <li><a href="#">opção 03</a></li>
+                <li><a href="#">opção 04</a></li>
+                <li><a href="#">opção 05</a></li>
+            </ul>
+        </menu>
+    </header>
+    <main>
+        <article>
+            <h2>Renato Paiva é demitido do Botafogo</h2>
+
+            <p>Clube anuncia saída do treinador menos de 48 horas depois da eliminação na Copa do Mundo</p>
+
+            <p>Renato Paiva não é mais o técnico do Botafogo. O clube anunciou a demissão do treinador na madrugada desta segunda-feira, através de uma nota oficial. O time busca agora um novo comandante.</p>
+
+            <p>A saída de Renato Paiva ocorre após a eliminação na Copa do Mundo de Clubes, para o Palmeiras, no sábado, em jogo das oitavas de final. O Alvinegro perdeu por 1 a 0, com o gol adversário saindo na prorrogação.</p>
+
+            <p>— O primeiro sentimento que me veio assim que o árbitro apitou, independentemente se tivesse vencido ou perdido, é de orgulho. Pelo trajeto que fizemos até aqui, pelo que os jogadores fizeram, a capacidade de jogar contra uma equipe forte e que conhecemos bem — afirmou o treinador após o jogo.</p>
+
+            <p>Além de Renato Paiva, Ricardo Dionísio (auxiliar), Miguel dos Santos (auxiliar), Rui Tavares (preparador de goleiros) e Daniel Castro (preparador físico) também deixaram o Botafogo.</p>
+
+            <p>Renato Paiva foi anunciado pelo Botafogo no dia 27 de fevereiro deste ano, depois de longa novela para definir quem comandaria a equipe em 2025. Campeão da Libertadores e do Brasileiro em 2024, Artur Jorge havia decidido deixar o clube para aceitar a proposta do Al-Rayyan, do Catar, na última semana de dezembro.</p>
+        </article>
+    </main>
+
+    <script>
+        function clickMenu() {
+            if (itens.style.display == 'block') {
+                itens.style.display = 'none'
+            }
+            else {
+                itens.style.display = 'block'
+            }
+
+        }
+    </script>
+</body>
+</html>
