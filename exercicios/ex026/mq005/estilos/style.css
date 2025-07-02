@@ -37,6 +37,8 @@ header #burguer:hover {
 
 menu {
     display: none;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 menu>ul {
     list-style: none;
@@ -47,13 +49,15 @@ menu a {
     text-decoration: none;
     color: white;
     background-color: rgb(47, 47, 47);
-    padding: 10px 0;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
     text-align: center;
     border-top: 2px solid gray;
 }
 
 menu a:hover {
-    background-color: gray;
+    background-color: rgb(87, 86, 86);
 }
 
 main {
