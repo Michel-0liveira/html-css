@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex box</title>
+    <style>
+        div.conteiner1 {
+            background-color: brown;
+
+            display: flex;
+        }
+
+        div.itens {
+            background-color: aqua;
+            text-align: center;
+            border: 1px solid black;
+            flex-basis: 120px;
+            padding: 10px 0;
+        }
+
+        div#i1 {
+            flex-grow: 0;
+            flex-shrink: 1;
+        }
+
+        div#i2 {
+            flex-grow: 1;
+            flex-shrink: 1;
+        }
+
+        div#i3 {
+            flex-grow: 0;
+            flex-shrink: 1;
+        }
+
+        div.conteiner2 {
+            margin-top:20px ;
+            display: flex;
+        }
+        div#i4 {
+            flex-grow: 0;
+            flex-shrink: 1;
+        }
+        div#i5 {
+            flex-grow: 1;
+            flex-shrink: 1;
+        }
+
+        div#i6 {
+            flex-grow: 2;
+            flex-shrink: 9;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="conteiner1">
+        <div class="itens" id="i1">A</div>
+        <div class="itens" id="i2">B</div>
+        <div class="itens" id="i3">C</div>
+
+    </div>
+    <div class="conteiner2">
+        <div class="itens" id="i4">A</div>
+        <div class="itens" id="i5">B</div>
+        <div class="itens" id="i6">C</div>
+
+    </div>
+</body>
+
+</html>
