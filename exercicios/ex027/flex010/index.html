@@ -8,43 +8,37 @@
     <style>
         div.conteiner {
             background-color: brown;
-            height: 300px;
+            padding: 5px;
+
             display: flex;
-            align-items: flex-start;
-            align-content: flex-start;
-            gap: 5PX;
+            gap: 3px;
+            flex-flow: row nowrap;
 
         }
 
         div.itens {
+            border-radius: 5px;
             background-color: aqua;
             text-align: center;
-            padding: 15px 30px;
             border: 1px solid black;
+            padding: 50px 0;
+            flex-basis: 200px;
+
         }
 
         div#i1 {
-            align-self: center;
+            flex-grow: 0;
+            flex-shrink: 0;
         }
 
         div#i2 {
-            align-self: stretch;
+            flex-grow: 1;
+            flex-shrink: 1;
         }
 
         div#i3 {
-            align-self: flex-end;
-        }
-
-        div#i4 {
-            align-self: auto;
-        }
-
-        div#i5 {
-            align-self: center;
-        }
-
-        div#i6 {
-            align-self: stretch;
+            flex-grow: 2;
+            flex-shrink: 2;
         }
     </style>
 </head>
@@ -54,9 +48,6 @@
         <div class="itens" id="i1">A</div>
         <div class="itens" id="i2">B</div>
         <div class="itens" id="i3">C</div>
-        <div class="itens" id="i4">D</div>
-        <div class="itens" id="i5">E</div>
-        <div class="itens" id="i6">F</div>
     </div>
 </body>
 
