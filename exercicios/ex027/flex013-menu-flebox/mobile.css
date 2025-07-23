@@ -1,0 +1,22 @@
+@charset "UTF-8";
+
+header, header nav {
+    flex-flow: column nowrap;
+}
+header h1 {
+    flex-basis: 50px;
+}
+
+header nav a {
+    width: 90vw;
+}
+#iburguer {
+    display: block;
+    cursor: pointer;
+    padding: 10px;
+    border: 1px dotted black;
+    border-radius: 50%;
+}
+#iburguer:hover {
+    background-color: rgba(255, 255, 255, 0.513);
+}

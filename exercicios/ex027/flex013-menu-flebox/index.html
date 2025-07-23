@@ -5,13 +5,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mobile.css" media="screen and (max-width:500px)">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
     <title>menu responsivo com flexbox</title>
 </head>
 
 <body>
     <header>
         <h1>Meu Site</h1>
-        <nav>
+        <span id="iburguer" class="material-symbols-outlined" onclick="clickmenu()">
+            menu
+        </span>
+        <nav id="itens">
             <a href="#">opção 01</a>
             <a href="#">opção 02</a>
             <a href="#">opção 03</a>
@@ -21,9 +26,24 @@
     </header>
     <main>
         <h2>Assunto do texto</h2>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorem in praesentium consequatur unde accusantium quisquam perspiciatis blanditiis libero numquam veritatis facilis debitis autem voluptates ea commodi voluptas natus, cupiditate adipisci. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam ab nobis numquam? Dolorum nulla perspiciatis porro laborum perferendis delectus error nemo dolorem nostrum! Aperiam molestiae quo ex, illum itaque eaque?</p>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Obcaecati architecto eum tenetur recusandae, reprehenderit ratione aliquid iusto odio officiis porro debitis neque consectetur veniam tempore hic. Labore molestias ab eaque?</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorem in praesentium consequatur unde accusantium
+            quisquam perspiciatis blanditiis libero numquam veritatis facilis debitis autem voluptates ea commodi
+            voluptas natus, cupiditate adipisci. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam ab
+            nobis numquam? Dolorum nulla perspiciatis porro laborum perferendis delectus error nemo dolorem nostrum!
+            Aperiam molestiae quo ex, illum itaque eaque?</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Obcaecati architecto eum tenetur recusandae,
+            reprehenderit ratione aliquid iusto odio officiis porro debitis neque consectetur veniam tempore hic. Labore
+            molestias ab eaque?</p>
     </main>
+
+    <script>
+        function clickmenu() {
+            if (itens.style.display == 'block') {
+                itens.style.display = 'none'
+            }
+            else {itens.style.display = 'block'}
+        }
+    </script>
 </body>
 
 </html>
