@@ -1,0 +1,56 @@
+@charset "UTF-8";
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* body {
+    height: 100vh;
+} */
+
+div.conteiner {
+    display: grid;
+    grid-template: 80px 40px 1fr 40px /
+        1fr 150px;
+    gap: 5px;
+    max-width: 800px;
+    margin: auto;
+    height: 100dvh;
+    background-color: lightgray;
+}
+
+div.conteiner>div {
+    font-size: 1em;
+padding: 10px;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+}
+
+.topo {
+    background-color: blueviolet;
+    grid-area: 1/1/2/3;
+}
+
+.menu {
+    background-color: aquamarine;
+    grid-area: 2/1/3/3;
+}
+
+.principal {
+    background-color: rgba(255, 0, 0, 0.574);
+    grid-area: 3/1/4/2;
+}
+
+.secundario {
+    background-color: aqua;
+    grid-area: 3/2/4/3;
+}
+
+.rodape {
+    color: white;
+    background-color: black;
+    grid-area: 4/1/5/3;
+}
